@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
+using MicroServices.Client;
 using MicroServices.Models.Accounts;
 using MicroServices.Models.Payments;
 using RestSharp;
@@ -26,7 +27,7 @@ namespace MicroServices.Accounts.Services
 
         public static async Task<List<BankAccount>> GetBankAccountsForAccount(int id)
         {
-            var client = new RestClient("http://localhost:50660/");
+            var client = ContractClientProvider.Client().Payments();
             var request = new RestRequest($"bank-accounts?id={id}");
             var accounts = await client.ExecuteGetTaskAsync<List<BankAccount>>(request).ConfigureAwait(false);
             return accounts.Data;
