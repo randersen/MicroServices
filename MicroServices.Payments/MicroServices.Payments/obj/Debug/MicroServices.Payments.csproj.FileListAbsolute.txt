@@ -141,6 +141,5 @@ C:\Source\MicroServices\MicroServices.Payments\MicroServices.Payments\bin\Micros
 C:\Source\MicroServices\MicroServices.Payments\MicroServices.Payments\bin\Microsoft.AI.ServerTelemetryChannel.xml
 C:\Source\MicroServices\MicroServices.Payments\MicroServices.Payments\bin\Microsoft.AI.WindowsServer.xml
 C:\Source\MicroServices\MicroServices.Payments\MicroServices.Payments\bin\Microsoft.AI.Web.xml
-C:\Source\MicroServices\MicroServices.Payments\MicroServices.Payments\obj\Debug\MicroServices.Payments.csprojResolveAssemblyReference.cache
 C:\Source\MicroServices\MicroServices.Payments\MicroServices.Payments\obj\Debug\MicroServices.Payments.dll
 C:\Source\MicroServices\MicroServices.Payments\MicroServices.Payments\obj\Debug\MicroServices.Payments.pdb
