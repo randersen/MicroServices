@@ -37,7 +37,7 @@ namespace MicroServices.IntegrationTests
 
         public static async Task<List<BankAccount>> GetBankAccountsForId(int id)
         {
-            var request = new RestRequest($"bank-accounts?id={id}", Method.GET);
+            var request = new RestRequest(String.Format("bank-accounts?id={0}", id), Method.GET);
             var response = await _client.ExecuteGetTaskAsync<List<BankAccount>>(request).ConfigureAwait(false);
             return response.Data;
         }

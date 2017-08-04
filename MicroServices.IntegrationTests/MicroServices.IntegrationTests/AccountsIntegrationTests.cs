@@ -44,7 +44,7 @@ namespace MicroServices.IntegrationTests
 
         public static async Task<Account> GetAccountById(int id)
         {
-            var request = new RestRequest($"accounts?id={id}", Method.GET);
+            var request = new RestRequest(string.Format("accounts?id={0}", id), Method.GET);
             var response = await _client.ExecuteGetTaskAsync<Account>(request).ConfigureAwait(false);
             return response.Data;
         }
