@@ -14,7 +14,6 @@ namespace MicroServices.IntegrationTests
     [TestFixture]
     public class AccountsIntegrationTests
     {
-        [Category("Payments")]
         [Category("Accounts")]
         [Test]
         public async Task GetAccountReturnsAccount()
